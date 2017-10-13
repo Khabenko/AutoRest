@@ -1,3 +1,4 @@
+import controllers.Client;
 import controllers.UserController;
 import models.User;
 import org.junit.Before;
@@ -18,8 +19,9 @@ public class SampleTestCase {
     @Test
     public void testUserInfoResponse() {
           RestTemplate restTemplate = new RestTemplate();
-          restTemplate.getForObject("http://marketing-web/Tavriav790_T/ExternalProjects/ExternalAPI.WebApp/EditHouseHoldRole")
-
+          Client client =null ;
+    //     restTemplate.getForObject("http://marketing-web/Tavriav790_T/ExternalProjects/ExternalAPI.WebApp/EditHouseHoldRole",Client.class);
+    //     restTemplate.headForHeaders
 
     //    User remoteUser = userController.getUserByUsername("maxkolotilkin");
   //      assertTrue(remoteUser.getHtml_url().contains("https://github.com/maxkolotilkin"));
